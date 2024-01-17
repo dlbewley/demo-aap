@@ -1,0 +1,8 @@
+apiVersion: automationcontroller.ansible.com/v1beta1
+kind: AutomationController
+metadata:
+  name: controller
+  namespace: ansible-automation-platform
+spec:
+  # https://access.redhat.com/solutions/6964036
+  file_storage_storage_class: ocs-storagecluster-cephfs

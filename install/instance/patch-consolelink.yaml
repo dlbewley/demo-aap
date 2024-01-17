@@ -1,0 +1,13 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: automation-hub
+spec:
+  href: 'https://automation-hub-ansible-automation-platform.apps.hub.lab.bewley.net/'
+---
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: controller
+spec:
+  href: 'https://controller-ansible-automation-platform.apps.hub.lab.bewley.net/'
