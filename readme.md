@@ -10,14 +10,19 @@
 oc apply -k operator
 ```
 
-* [Install an instance](install/instance) of the Controller and Hub (optional
+* [Install an instance](install/instance) of the Controller and Hub (optional)
 
 ```bash
 oc apply -k instance
 ```
 
-* Controller? Hub? Both? _Adam Pippert_
+### Controller? Hub? Both? 
+
+* _Adam Pippert_
 > "Hub acts as a content manager for Ansible.  It connects to container repos for execution environments, controls access to content, and allows you to pull certified and validated content from Red Hat.  Controller controls how individual playbooks are run against your execution environment and how they’re run."
+
+* _Christian Adams_
+> "AAP Automation Hub is a central place to serve up content in a customer's org, such as ansible collections, container images (Execution Environments and Decision Environments), and ansible roles.  The content served up by Automation Hub is then used by Controller.  Hub is like an on prem version of <https://galaxy.ansible.com/ui/> (with the addition of a container registry)"
 
 ### Caveats
 
