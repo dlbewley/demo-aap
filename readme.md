@@ -46,3 +46,36 @@ EXAMPLE
 ## Getting Started Using AAP
 
 * TBD :)
+
+## Configure AAP
+
+* Create a service account for Ansible to talk to OpenShift
+
+```bash
+oc apply -k configure/credentials/ocp
+```
+
+oc extract secret/aap2ocp-token -n ansible-automation-platform --keys=token --to=-
+# token
+eyJhbGc..EXAMPLE...
+```
+
+* Give that serviceaccount appropriate perms via rolebinding?
+
+```bash
+# todo rolebinding for virtualization
+```
+
+### AAP and OpenShift Virtualization
+
+See <https://kubevirt.io/2023/Managing-KubeVirt-VMs-with-Ansible.html>
+
+ ansible-galaxy collection install kubevirt.core
+
+## References
+
+* <https://github.com/openshift/community.okd>
+* <https://docs.ansible.com/ansible/latest/collections/kubernetes/core/index.html>
+
+* <https://kubevirt.io/2023/Managing-KubeVirt-VMs-with-Ansible.html>
+* <https://docs.ansible.com/ansible/latest/collections/community/general/kubevirt_template_module.html>
