@@ -78,4 +78,7 @@ See <https://kubevirt.io/2023/Managing-KubeVirt-VMs-with-Ansible.html>
 * <https://docs.ansible.com/ansible/latest/collections/kubernetes/core/index.html>
 
 * <https://kubevirt.io/2023/Managing-KubeVirt-VMs-with-Ansible.html>
+* <https://galaxy.ansible.com/ui/repo/published/kubevirt/core/>
+* <https://kubevirt.io/kubevirt.core/latest/>
 * <https://docs.ansible.com/ansible/latest/collections/community/general/kubevirt_template_module.html>
+* <https://github.com/robertsandoval/acm-aap-demo/tree/main>
