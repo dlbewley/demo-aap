@@ -53,7 +53,6 @@ EXAMPLE
 
 ```bash
 oc apply -k configure/credentials/ocp
-```
 
 oc extract secret/aap2ocp-token -n ansible-automation-platform --keys=token --to=-
 # token
