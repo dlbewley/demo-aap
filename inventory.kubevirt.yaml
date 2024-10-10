@@ -1,4 +1,3 @@
----
 - plugin: redhat.openshift_virtualization.kubevirt
   namespaces:
     - testnamespace01
